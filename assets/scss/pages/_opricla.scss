@@ -1,0 +1,74 @@
+// optical-nav
+
+.optical-nav ul li{
+width: 100%;
+border: 1px solid #DCDCDC;
+font-weight: 500;
+text-align: center;
+padding: 24px 0px;
+-webkit-box-orient: vertical;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+.optical-nav ul li:hover{
+border-bottom: 3px solid #AA0601;
+}
+
+@media(max-width:768px){
+.optical-nav ul li{
+padding: 16px 0px;
+font-size: 24px;
+}
+.optical-nav .container{
+padding-left: 0px;	
+padding-right: 0px;	
+ }
+   
+}
+@media(max-width:576px){
+.optical-nav .container{
+padding-left: 0px;	
+padding-right: 0px;	
+}
+.optical-nav ul li{
+ font-size: 16px;
+}  
+}
+
+//optical-top
+
+
+//optical-shop
+.optical-shop{
+text-align: center;  
+padding: 80px 0px;
+}
+.shop-box{
+margin: 0 -12px 0 -12px;    
+
+}
+
+
+.shop-item{
+width:25%; 
+padding: 32px 12px 80px 12px;
+}
+
+.text-primary{
+color: $primary;
+}
+
+.color-box{
+display: flex;
+}
+.color-chart{
+width: 24px;
+height: 24px;
+background-color:#5F3E2D ;
+border-radius: 4px;
+margin-right: 8px;
+}
+.color-chart:nth-child(2){
+background-color:#B75929 ;
+}

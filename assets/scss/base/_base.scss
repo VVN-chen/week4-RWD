@@ -1,0 +1,80 @@
+/* 共用css */    
+    body{
+     font-family: "Noto Sans TC", "Roboto";
+    }
+    
+    img{
+        vertical-align: middle;
+        max-width: 100%;   
+        height: auto;
+        } 
+        
+
+     //  flex
+     .flex-box{
+    display: flex;
+    justify-content: space-between;
+    }
+    .flex-wrap{flex-wrap: wrap;}
+    .flex-nowrap{flex-wrap: nowrap;}
+
+
+
+
+     /* 區塊all */
+    .container{
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    }
+
+    .for_pc{ display: inherit;}	
+    .for_phone{display: none;}
+
+     @media(max-width:768px){
+    .container{max-width: 720px;}
+    .for_phone{display: inherit;}
+    .for_pc{display: none;}	
+    /* .for_phone{display: inherit;}
+    .for_pc{display: none;}		 */
+    }
+    
+     @media(max-width:576px){
+    .container{max-width: 540px;}
+    .for_phone{display: inherit;}
+    .for_pc{display: none;}	
+     }
+
+    /* 文字 */
+    .fz-64{font-size: 64px;}
+    .fz-48{font-size: 48px;}
+    .fz-42{font-size: 42px;}
+    .fz-36{font-size: 36px;}
+    .fz-32{font-size: 32px;}
+    .fz-24{font-size: 24px;}
+    .fz-16{font-size: 16px;}
+    .fw-bold{font-weight: 700;}
+    @media(max-width:576px){
+    .fz-sm-48{font-size: 48px;}
+    .fz-sm-24{font-size: 24px;}
+    .fz-sm-16{font-size: 16px;}
+      
+    }
+    
+    
+    // a連結
+    .a a{
+    text-decoration: none;
+    color:#ffffff;   
+    }
+
+    .a-black a{
+      text-decoration: none;  
+      color: #000; 
+    }
+
+.a a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+

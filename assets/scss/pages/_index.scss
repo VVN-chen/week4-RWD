@@ -1,66 +1,3 @@
-/* 共用css */
-a{
-  text-decoration: none;
-  color:#ffffff;
-  }
-  
-  img{
-  vertical-align: middle;
-  max-width: 100%;   
-  height: auto;
-  } 
-  
-  body{
-   font-family: "Noto Sans TC", "Roboto";
-  }
-  
-   /* 區塊all */
-  .container{
-  max-width: 1320px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0 auto;
-  }
-  
-  .for_pc{ display: inherit;}	
-  .for_phone{display: none;}
-  .flex-box{
-  display: flex;
-  justify-content: space-between;
-  }
-  
-   @media(max-width:768px){
-  .container{max-width: 720px;}
-  .flex-box{flex-wrap: wrap;}
-  /* .for_phone{display: inherit;}
-  .for_pc{display: none;}		 */
-  }
-  
-   @media(max-width:576px){
-  .container{max-width: 540px;}
-  .flex-box{flex-wrap: wrap;}
-  .for_phone{display: inherit;}
-  .for_pc{display: none;}	
-  .flex-box{flex-wrap: wrap;}
-   }
-  
-  
-  
-  /* 文字 */
-  .fz-64{font-size: 64px;}
-  .fz-48{font-size: 48px;}
-  .fz-36{font-size: 36px;}
-  .fz-24{font-size: 24px;}
-  .fz-16{font-size: 16px;}
-  .fw-bold{font-weight: 700;}
-  @media(max-width:576px){
-  .fz-sm-48{font-size: 48px;}
-  .fz-sm-24{font-size: 24px;}
-  .fz-sm-16{font-size: 16px;}
-    
-  }
-  
-  
   
   /* top */
   .top{
@@ -72,7 +9,7 @@ a{
   
   .top .top-text{
   height: 787px;
-  color: #650300;
+  color: $secondary;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,13 +18,13 @@ a{
   
   .top-text .btn a{
   color: #ffffff;
-  background-color: #AA0601;
+  background-color: $primary;
   padding: 6px 12px;
   }
   
   .top-text .btn a:hover{
   background-color: #ffffff;	
-  color: #AA0601;
+  color: $primary;
   }
   
   @media(max-width:768px){
@@ -115,13 +52,13 @@ a{
   
   /* content */
   .content{
-  background-color: #FBF2F2;
+  background-color: $bg-color;
   padding: 80px 0;
   }
   
   .content-title{
   text-align: center;
-  color:#650300;
+  color: $secondary;
   padding-bottom: 24px;
   }
   
@@ -131,7 +68,7 @@ a{
   }
   
   .title{
-  color:#650300;
+  color: $secondary;
   padding-bottom: 8px;
   }
   
@@ -172,13 +109,13 @@ a{
   }
   
   .title{
-  color:#650300;	
+  color: $secondary;	
   text-align: center;
   padding-bottom: 48px;
   }
   
   .card-title{
-  color:#AA0601;	
+  color: $primary;	
   text-align: center;
   font-style:italic; 
   font-weight: 900;
@@ -306,7 +243,7 @@ a{
   
   /* contact */
   .contact{
-  background-color:#FBF2F2;	
+  background-color:$bg-color;	
   padding: 80px 0;
   }
   
@@ -332,7 +269,7 @@ a{
   padding-bottom: 24px;
   }
   .form_box:focus{
-  border-color:#AA0601;
+  border-color:$primary;
   outline: 0;
   }
   
@@ -348,7 +285,7 @@ a{
   }
   
   .button_box{
-  background-color: #AA0601;
+  background-color: $primary;
   color: #ffffff;
   border: 0px;
   width: 416px;
@@ -356,7 +293,7 @@ a{
   }
   
   .button_box:hover{
-  background-color: #650300;	
+  background-color: $secondary;	
   }
   
   @media(max-width:768px){

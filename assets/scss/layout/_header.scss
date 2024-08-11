@@ -1,6 +1,6 @@
    /* header  */
    .header{
-    background-color: #AA0601;
+    background-color:$primary;
     }
     
     .header img{
@@ -16,12 +16,7 @@
     width: 25%;
     text-align: center;
     }
-    
-    .menu a:hover{	
-    border-bottom: 1px solid #ffffff;
-    }
-    
-    
+  
     @media(max-width:768px){
     .menu{
     width: 76%;	
@@ -30,9 +25,10 @@
     .btn{
     margin-top: 4px;	
     }
-    
+    .header .container{
+     max-width: 100%;
     }
-    
+    }
     
     @media(max-width:576px){
     .header .container{
