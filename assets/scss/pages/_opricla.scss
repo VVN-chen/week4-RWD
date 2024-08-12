@@ -11,6 +11,14 @@ word-wrap: break-word;
 word-break: break-all;
 }
 
+.optical-nav a{
+    padding: 24px 0px;
+
+    }
+
+
+
+
 .optical-nav ul li:hover{
 border-bottom: 3px solid #AA0601;
 }
@@ -46,13 +54,13 @@ padding: 80px 0px;
 }
 .shop-box{
 margin: 0 -12px 0 -12px;    
-
+padding: 32px 0 0px 0; 
 }
 
 
 .shop-item{
 width:25%; 
-padding: 32px 12px 80px 12px;
+padding: 0px 12px 80px 12px;
 }
 
 .text-primary{
@@ -71,4 +79,71 @@ margin-right: 8px;
 }
 .color-chart:nth-child(2){
 background-color:#B75929 ;
+}
+
+// pagination
+.pagination{
+justify-content: center;
+font-size: 18px;
+padding: 12px 0px;
+}
+
+.page-item a{
+border: 1px solid #555555;
+word-wrap: break-word;
+word-break: break-all; 
+}
+
+.page-item a:hover{
+background-color: #000000;
+color: #ffffff;
+}
+.page-item a.active{
+background-color: #000000;
+color: #ffffff;
+
+}
+
+.page-link01{
+ padding:12px;  
+ margin: 0 -0.5px; 
+}
+
+.bg-gy{
+background-color:#F2F2F2;
+}
+
+.page-link{
+padding: 12px 16px;  
+margin: 0 -0.5px; 
+}
+
+@media(max-width:768px){
+
+.shop-box{
+ padding: 32px 0 40px 0; 
+}
+        
+.shop-item{
+width:50%; 
+padding-bottom:40px; 
+}
+
+}
+
+@media(max-width:576px){
+.optical-shop{ 
+padding: 40px 0px 64px 0;
+}
+
+
+.shop-box{
+padding: 24px 0 40px 0; 
+}
+
+.shop-item{
+width:100%; 
+padding-bottom:24px;
+}   
+
 }
