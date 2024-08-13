@@ -32,6 +32,15 @@
     }
     .copyright-txt {gap: 48px;}
     
+    @media(max-width:768px){
+    .social{gap: 16px;}
+    .footer-item a {
+    font-size: 30px;}
+    .footer-menu {
+      gap: 0px;
+  } 
+}
+
     @media(max-width:576px){
     .footer-contact{
     padding: 24px  0;
