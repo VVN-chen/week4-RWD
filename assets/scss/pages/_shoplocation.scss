@@ -1,0 +1,44 @@
+// shoplocation
+
+.shop-title{
+font-weight: 600;
+border-left: 8px solid $primary;
+padding-left: 16px ;
+margin: 96px 0 33px 0;
+}
+
+.area-box{
+display: flex;
+width: 33.3333%;
+}
+
+.area-select{
+ padding: 6px 12px;   
+ margin-left: 16px;
+}
+
+
+// content 
+
+.local-content{
+    width: 33.3333%;
+}
+.local-item{
+
+}
+
+.local-border{
+ border: 1px solid #00000020;   
+
+}
+.area-item{
+justify-content: flex-start;   
+padding: 0 24px; 
+}
+
+.area-a{
+color: #ffffff;    
+background-color: black;
+text-decoration: none;
+
+}
