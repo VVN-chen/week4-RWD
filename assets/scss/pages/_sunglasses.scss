@@ -1,5 +1,26 @@
 
     //optical-shop 
-    .shop-item{
+    .shop-item2{
     width:33.3333%; 
+    padding: 0px 12px 80px 12px;
+    }
+
+
+
+    @media(max-width:768px){
+    .shop-item2{
+    width:50%; 
+    padding-bottom:40px; 
+    }
+        
+    }
+
+
+
+@media(max-width:576px){   
+    .shop-item2{
+    width:100%; 
+    padding-bottom:24px;
+    }   
+
     }

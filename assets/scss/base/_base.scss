@@ -17,9 +17,8 @@
     }
     .flex-wrap{flex-wrap: wrap;}
     .flex-nowrap{flex-wrap: nowrap;}
-
-
-
+    .jcs{justify-content: flex-start;}
+    .jcc{justify-content: center;}
 
      /* 區塊all */
     .container{
@@ -32,11 +31,10 @@
     .for_pc{ display: inherit;}	
     .for_phone{display: none;}
 
-     @media(max-width:768px){
+     @media(max-width:767px){
     .container{max-width: 720px;}
     // .for_phone{display: inherit;}
     // .for_pc{display: none;}	
-
     }
     
      @media(max-width:576px){
@@ -53,6 +51,7 @@
     .fz-32{font-size: 32px;}
     .fz-20{font-size: 20px;}
     .fz-24{font-size: 24px;}
+    .fz-18{font-size: 18px;}
     .fz-16{font-size: 16px;}
     .fw-bold{font-weight: 700;}
     @media(max-width:576px){
@@ -64,6 +63,11 @@
     
     
     // a連結
+
+a{
+    display:inline-block;
+}
+
     .a a{
     text-decoration: none;
     color:#ffffff;   

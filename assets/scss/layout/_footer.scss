@@ -4,10 +4,11 @@
     color: #ffffff;
     }
     .footer-contact{
-    padding: 48px 0 0 0;
+    padding: 48px 0 32px 0;
     }
     .footer-menu{	
     gap: 48px;
+    padding-bottom: 35px;
     }
     
     .footer-menu a:hover{	
@@ -40,6 +41,12 @@
       gap: 0px;
   } 
 }
+@media(max-width:679px){
+  .footer-menu{display: none;}
+} 
+
+
+
 
     @media(max-width:576px){
     .footer-contact{

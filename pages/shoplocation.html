@@ -9,19 +9,19 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   <title>Document</title>
-    <title>index</title>
+   <title>門市據點</title>
+
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
 <div class="container shoplocation"> 
-<h2 class="fz-48 shop-title">門市據點</h2>
+<h2 class="fz-48 fz-24 shop-title">門市據點</h2>
 
 <!-- label -->
 <div class="area-box">
-<label for="area">選擇地區</label>
-<select name="area" id="area-select" class="area-select">選擇地區
+<label for="area" class="area-title">選擇地區</label>
+<select name="area" id="area-select" class="area-select fz-18">
 <option value="台北市">台北市</option>
 <option value="台中市">台中市</option>
 <option value="高雄市">高雄市</option>
@@ -29,26 +29,113 @@
 </div>
 
 <!-- content -->
-<ul class="local-content">
-<li>
- <img src="/assets/images/store-1.png" alt="">  
- <div class="local-item local-border"> 
- <h3 class="fz-24 local-border">台北中山旗艦店</h3>
- <div class="flex-box area-item">
-<span class="material-symbols-outlined">call</span>
-<p class="fz-20 fz-sm-16">電話：(02)000-1234</p>
-</div>
-<div class="flex-box area-item">
-    <span class="material-symbols-outlined">Schedule</span>
-    <p class="fz-20 fz-sm-16">營業時間：10:00-21:00</p>
-</div>
-<div class="flex-box area-item">
-        <span class="material-symbols-outlined">Location_On</span>
-        <p class="fz-20 fz-sm-16" >地址：台北市中山區南京東路25巷2-1號</p>
-</div>
-<a class="area-a" href="#">詳細資訊</a>
-</div> 
-</li>
+<ul class="local-content flex-box flex-wrap jcs ">
+  <li class="local-card">
+    <img src="/assets/images/store-1.png" alt="">  
+    <div class="local-item local-border"> 
+    <h3 class="fz-24 local-title local-border">台北中山旗艦店</h3>
+    <div class="local-frame">
+    <div class="flex-box jcs">
+   <span class="material-symbols-outlined" style="padding-right: 11px;">call</span>
+   <p class="fz-20">電話：(02)000-1234</p>
+   </div>
+   <div class="flex-box jcs">
+       <span class="material-symbols-outlined" style="padding-right: 11px;">Schedule</span>
+       <p class="fz-20 ">營業時間：10:00-21:00</p>
+   </div>
+   <div class="flex-box jcs">
+           <span class="material-symbols-outlined" style="padding-right: 11px;">Location_On</span>
+           <p class="fz-20 " >地址：台北市中山區南京東路25巷2-1號</p>
+   </div>
+   </div>
+   <div class="black-button"><a href="#">詳細資訊</a></div>
+   </div> 
+   </li>
+<li class="local-card">
+  <img src="/assets/images/store-2.png" alt="">  
+  <div class="local-item local-border"> 
+  <h3 class="fz-24 local-title local-border">台北綠園店</h3>
+  <div class="local-frame">
+  <div class="flex-box jcs">
+ <span class="material-symbols-outlined" style="padding-right: 11px;">call</span>
+ <p class="fz-20 fz-sm-16">電話：(02)000-1234</p>
+ </div>
+ <div class="flex-box jcs">
+     <span class="material-symbols-outlined" style="padding-right: 11px;">Schedule</span>
+     <p class="fz-20 fz-sm-16">營業時間：10:00-21:00</p>
+ </div>
+ <div class="flex-box jcs">
+         <span class="material-symbols-outlined" style="padding-right: 11px;">Location_On</span>
+         <p class="fz-20 fz-sm-16" >地址：台北市中山區南京東路25巷2-1號</p>
+ </div>
+ </div>
+ <div class="black-button"><a href="#">詳細資訊</a></div>
+ </div> 
+ </li>
+ <li class="local-card">
+  <img src="/assets/images/store-3.png" alt="">  
+  <div class="local-item local-border"> 
+  <h3 class="fz-24 local-title local-border">台中清水旗艦店</h3>
+  <div class="local-frame">
+  <div class="flex-box jcs">
+ <span class="material-symbols-outlined" style="padding-right: 11px;">call</span>
+ <p class="fz-20 fz-sm-16">電話：(02)000-1234</p>
+ </div>
+ <div class="flex-box jcs">
+     <span class="material-symbols-outlined" style="padding-right: 11px;">Schedule</span>
+     <p class="fz-20 fz-sm-16">營業時間：10:00-21:00</p>
+ </div>
+ <div class="flex-box jcs">
+         <span class="material-symbols-outlined" style="padding-right: 11px;">Location_On</span>
+         <p class="fz-20 fz-sm-16" >地址：台北市中山區南京東路25巷2-1號</p>
+ </div>
+ </div>
+ <div class="black-button"><a href="#">詳細資訊</a></div>
+ </div> 
+ </li>
+ <li class="local-card">
+  <img src="/assets/images/store-4.png" alt="">  
+  <div class="local-item local-border"> 
+  <h3 class="fz-24 local-title local-border">台中清水旗艦店</h3>
+  <div class="local-frame">
+  <div class="flex-box jcs">
+ <span class="material-symbols-outlined" style="padding-right: 11px;">call</span>
+ <p class="fz-20 fz-sm-16">電話：(02)000-1234</p>
+ </div>
+ <div class="flex-box jcs">
+     <span class="material-symbols-outlined" style="padding-right: 11px;">Schedule</span>
+     <p class="fz-20 fz-sm-16">營業時間：10:00-21:00</p>
+ </div>
+ <div class="flex-box jcs">
+         <span class="material-symbols-outlined" style="padding-right: 11px;">Location_On</span>
+         <p class="fz-20 fz-sm-16" >地址：台北市中山區南京東路25巷2-1號</p>
+ </div>
+ </div>
+ <div class="black-button"><a href="#">詳細資訊</a></div>
+ </div> 
+ </li>
+ <li class="local-card">
+  <img src="/assets/images/store-5.png" alt="">  
+  <div class="local-item local-border"> 
+  <h3 class="fz-24 local-title local-border">高雄夢時代店</h3>
+  <div class="local-frame">
+  <div class="flex-box jcs">
+ <span class="material-symbols-outlined" style="padding-right: 11px;">call</span>
+ <p class="fz-20 fz-sm-16">電話：(02)000-1234</p>
+ </div>
+ <div class="flex-box jcs">
+     <span class="material-symbols-outlined" style="padding-right: 11px;">Schedule</span>
+     <p class="fz-20 fz-sm-16">營業時間：10:00-21:00</p>
+ </div>
+ <div class="flex-box jcs">
+         <span class="material-symbols-outlined" style="padding-right: 11px;">Location_On</span>
+         <p class="fz-20 fz-sm-16" >地址：台北市中山區南京東路25巷2-1號</p>
+ </div>
+ </div>
+ <div class="black-button"><a href="#">詳細資訊</a></div>
+ </div> 
+ </li>
+
 </ul>
 
 </div>
